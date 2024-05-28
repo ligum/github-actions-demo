@@ -20,7 +20,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
          file: Dockerfile
-         push: false
+         push: true
          tags: ligum/actions-app:1
          registry: docker.io
          username: ${{ secrets.DOCKER_USERNAME }}
