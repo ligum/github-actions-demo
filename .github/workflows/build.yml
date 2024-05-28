@@ -10,12 +10,12 @@ jobs:
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
-      - name: Build and push
-        uses: docker/build-push-action@v3
-        with:
-          file: Dockerfile
-          push: false
-          tags: user/app:latest
+#      - name: Build and push
+#        uses: docker/build-push-action@v3
+#        with:
+#          file: Dockerfile
+#          push: false
+#          tags: user/app:latest
       - name: Build and Push Docker Image
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
